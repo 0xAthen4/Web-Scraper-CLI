@@ -111,3 +111,56 @@ python main.py https://example.com -o website.html
 ```bash
 python main.py https://example.com -u "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 ```
+
+## 🧩 Advanced Usage
+
+### Using Complex CSS Selectors
+
+You can use advanced CSS selectors to target specific elements:
+
+- Select elements by class:
+  ```bash
+  python main.py https://example.com -s ".classname"
+  ```
+  
+- Select elements by ID:
+  ```bash
+  python main.py https://example.com -s "#elementid"
+  ```
+  
+-  Select elements by attribute:
+  ```bash
+  python main.py https://example.com -s "a[target='_blank']"
+  ```
+  
+-  Combine selectors:
+  ```bash
+  python main.py https://example.com -s "article.post h2, article.post p:first-child"
+  ```
+  
+### Extracting Specific Attributes
+The `-a` option allows you to extract specific attributes from elements:
+
+- `text`: Get the text content of an element
+- `html`: Get the HTML content of an element
+- `href`: Get the href attribute of links
+- `src`: Get the src attribute of images/media
+- Any other HTML attribute: `class`, `id`, `title`, etc.
+
+### Pagination Strategies
+For sites with different pagination structures:
+
+- Next button with a specific class:
+  ```bash
+  python main.py https://example.com -n ".pagination .next"
+  ```
+
+- Next button with specific text:
+  ```bash
+  python main.py https://example.com -n "a:contains('Next')"
+  ```
+
+- Page number links:
+  ```bash
+  python main.py https://example.com -n ".pagination a:last-child"
+  ```
