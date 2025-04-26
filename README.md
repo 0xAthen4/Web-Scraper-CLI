@@ -28,10 +28,39 @@ cd web-scraper-cli
 ```
 
 2. Install requirements:
-```bashpip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 ```
 
 3. Make the script executable (Unix/Linux/macOS):
 ```bash
 chmod +x main.py
 ```
+
+## 🔍 Usage
+
+```bash
+python main.py <URL> [options]
+```
+
+## ⚙️ Options
+
+### Basic Options:
+- `url`: URL to scrape (required)
+- `-s, --selector`: CSS selector to extract specific elements
+- `-a, --attributes`: Comma-separated list of attributes to extract (text, html, href, src, etc.)
+- `-f, --format`: Output format (text, json, csv)
+- `-o, --output`: Output file path
+
+### Request Options:
+- `-u, --user-agent`: User-Agent string
+- `-t, --timeout`: Request timeout in seconds (default: 30)
+- `-d, --delay`: Delay between requests in seconds (default: 2)
+- `--no-robots`: Ignore robots.txt
+
+### Pagination Options:
+- `-p, --pages`: Maximum number of pages to scrape (default: 1)
+- `-n, --next-page`: CSS selector for the next page link
+
+### Other Options:
+- `-v, --verbose`: Verbose output
