@@ -19,3 +19,19 @@ A versatile command-line web scraper for extracting content from websites with s
 - requests library
 - beautifulsoup4 library
 
+## 🚀 Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/0xAthen4/web-scraper-cli.git
+cd web-scraper-cli
+```
+
+2. Install requirements:
+```bashpip install -r requirements.txt
+```
+
+3. Make the script executable (Unix/Linux/macOS):
+```bash
+chmod +x main.py
+```
