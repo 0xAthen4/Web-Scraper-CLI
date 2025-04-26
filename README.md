@@ -12,3 +12,10 @@ A versatile command-line web scraper for extracting content from websites with s
 - ⏱️ Configurable delay between requests to avoid overloading servers
 - 🧩 Extract specific attributes from HTML elements
 - 🔄 Customize user agent and request parameters
+
+## 📋 Requirements
+
+- Python 3.6 or higher
+- requests library
+- beautifulsoup4 library
+
