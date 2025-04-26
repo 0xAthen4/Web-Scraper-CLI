@@ -64,3 +64,50 @@ python main.py <URL> [options]
 
 ### Other Options:
 - `-v, --verbose`: Verbose output
+
+## 📝 Examples
+
+### Extract all paragraphs from a webpage:
+```bash
+python main.py https://example.com -s "p"
+```
+
+### Extract headlines with their text:
+```bash
+python main.py https://example.com -s "h1, h2, h3" -a text
+```
+
+### Extract links with their URLs and text:
+```bash
+bashpython main.py https://example.com -s "a" -a href,text
+```
+
+### Extract images with their source URLs and alt text:
+```bash
+python main.py https://example.com -s "img" -a src,alt
+```
+
+### Save output to a JSON file:
+```bash
+python main.py https://example.com -s "article" -f json -o articles.json
+```
+
+### Extract data from a paginated site (5 pages):
+```bash
+python main.py https://example.com/page/1 -s ".post" -p 5 -n ".pagination a.next"
+```
+
+### Extract product information from an e-commerce site:
+```bash
+python main.py https://example.com/products -s ".product" -a text,html -f csv -o products.csv
+```
+
+### Download full HTML content:
+```bash
+python main.py https://example.com -o website.html
+```
+
+### Use a custom user agent:
+```bash
+python main.py https://example.com -u "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+```
