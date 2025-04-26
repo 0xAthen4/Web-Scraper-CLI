@@ -164,3 +164,22 @@ For sites with different pagination structures:
   ```bash
   python main.py https://example.com -n ".pagination a:last-child"
   ```
+
+## ⚠️ Limitations
+
+- Some websites may block scraping attempts, especially with high request rates
+- JavaScript-rendered content cannot be scraped with this tool (it doesn't execute JS)
+- Website structure changes may break your selectors
+- Complex authentication flows are not supported
+- Some websites may have CAPTCHA or other protection mechanisms
+- Always check a website's Terms of Service before scraping its content
+
+## 🔒 Ethical Usage
+
+- Always respect robots.txt rules (only use --no-robots when you have permission)
+- Use reasonable delays between requests (higher than the default if scraping heavily)
+- Don't distribute or republish content in violation of copyright
+- Consider using official APIs if available instead of scraping
+- Be transparent about your identity by using an appropriate user agent
+- Only scrape publicly accessible data, not personal information
+- Use the scraped data in a manner consistent with the website's terms of service
