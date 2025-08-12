@@ -183,3 +183,7 @@ For sites with different pagination structures:
 - Be transparent about your identity by using an appropriate user agent
 - Only scrape publicly accessible data, not personal information
 - Use the scraped data in a manner consistent with the website's terms of service
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
